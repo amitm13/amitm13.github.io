@@ -1,1 +1,2 @@
-# amitm13.github.io
+# Vedicore
+## Bhagavat Gita
