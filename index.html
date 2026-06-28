@@ -3,96 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bhagavat Gita App</title>
-
-  <meta name="description" content="Bhagavat Gita App – Read, learn, and explore the timeless wisdom of the Bhagavad Gita on your Android device." />
-  <meta name="keywords" content="Bhagavat Gita, Gita App, Hindu Scripture, Krishna, Arjuna, Spiritual App" />
-  <meta name="author" content="Bhagavat Gita App" />
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #ff9933, #ffffff, #138808);
-      color: #333;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container {
-      background: #ffffff;
-      max-width: 800px;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-      text-align: center;
-    }
-
-    h1 {
-      color: #d35400;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #2c3e50;
-      font-weight: normal;
-      margin-top: 0;
-    }
-
-    p {
-      line-height: 1.6;
-      margin: 15px 0;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #2ecc71;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 6px;
-      transition: background 0.3s ease;
-    }
-
-    .button:hover {
-      background: #27ae60;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+  <title>Vedicore | Spiritual Apps for Daily Practice</title>
+  <meta
+    name="description"
+    content="Vedicore creates spiritual Android apps for reading, reflection, and mindful daily practice."
+  />
+  <meta name="theme-color" content="#fff7eb" />
+  <link rel="stylesheet" href="assets/site.css" />
 </head>
+<body data-page="home">
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="./">
+        <div class="brand-mark">V</div>
+        <div class="brand-copy">
+          <strong>Vedicore</strong>
+          <span>Spiritual app collection</span>
+        </div>
+      </a>
+      <a class="pill-link" data-developer-link href="https://play.google.com/store/apps/developer?id=vedicore" target="_blank" rel="noopener noreferrer">
+        Google Play Developer
+      </a>
+    </header>
 
-<body>
-  <div class="container">
-    <h1>Bhagavat Gita App</h1>
-    <h2>Timeless Wisdom for Modern Life</h2>
+    <section class="hero">
+      <div class="hero-panel">
+        <div class="eyebrow">Sacred tools for modern life</div>
+        <h1 data-hero-title>Vedicore</h1>
+        <p data-hero-subtitle>
+          Spiritual apps crafted with calm, clarity, and devotion.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#apps">Explore apps</a>
+          <a class="button button-secondary" data-developer-link href="https://play.google.com/store/apps/developer?id=vedicore" target="_blank" rel="noopener noreferrer">View developer page</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong data-app-count>2+</strong>
+            <span>Live apps on Google Play today, with room to grow.</span>
+          </div>
+          <div class="stat">
+            <strong>Seamless</strong>
+            <span>Every app uses the same calm visual system, so new releases fit in naturally.</span>
+          </div>
+        </div>
+      </div>
 
-    <p>
-      The Bhagavat Gita App helps you explore the eternal teachings of Lord Krishna
-      through a simple and easy-to-use Android application.
-    </p>
+      <aside class="hero-aside">
+        <div class="feature-card" id="spotlight">
+          <div class="label">Featured app</div>
+          <div class="orb">ॐ</div>
+          <h2>Bhagavat Gita</h2>
+          <p>
+            A calm, focused reading experience for exploring scripture with clarity and devotion.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="label">About the collection</div>
+          <h2>Designed to scale beautifully</h2>
+          <p data-hero-note>
+            A growing collection of devotional tools designed to support reading, reflection, and daily practice.
+          </p>
+        </div>
+      </aside>
+    </section>
 
-    <p>
-      Read verses, understand meanings, and reflect on the spiritual guidance
-      that has inspired millions for centuries.
-    </p>
+    <section class="section" id="apps">
+      <div class="section-header">
+        <div>
+          <h2>Featured apps</h2>
+          <p>
+            Each app gets its own detail page, while the landing page stays flexible enough for new releases.
+          </p>
+        </div>
+      </div>
+      <div class="app-grid" data-app-grid></div>
+    </section>
 
-    <!-- Optional: Replace # with your Play Store link -->
-    <a class="button" href="https://play.google.com/store/apps/details?id=com.vedicore.bhagavat_gita&pcampaignid=web_share" target="_blank">
-      Download on Google Play
-    </a>
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2>Why this setup works</h2>
+          <p>
+            You can add more apps by editing one data file. The home page and detail pages will update automatically.
+          </p>
+        </div>
+      </div>
+      <div class="section-card">
+        <div class="app-grid">
+          <div class="detail-card" style="padding: 22px;">
+            <div class="eyebrow">Reusable</div>
+            <h3 style="margin-bottom: 10px;">One design, many apps</h3>
+            <p class="muted">New apps inherit the same styles and layout, so your store presence stays cohesive.</p>
+          </div>
+          <div class="detail-card" style="padding: 22px;">
+            <div class="eyebrow">Editable</div>
+            <h3 style="margin-bottom: 10px;">One data file to update</h3>
+            <p class="muted">Add title, description, store link, and features in <code>assets/apps.js</code> and the site follows along.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      <p>© 2026 Bhagavat Gita App. All rights reserved.</p>
+    <footer class="footer">
+      <span>© 2026 Vedicore</span>
+      <span>Built for spiritual apps, meditation tools, and future releases.</span>
     </footer>
-  </div>
+  </main>
+
+  <script src="assets/apps.js"></script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
