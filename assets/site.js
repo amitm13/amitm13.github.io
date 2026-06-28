@@ -13,12 +13,22 @@
     return apps.find((app) => app.slug === slug) || apps[0];
   }
 
+  function getIconMarkup(app) {
+    if (app.iconUrl) {
+      return `<img class="app-icon-image" src="${app.iconUrl}" alt="${app.title} icon" loading="lazy" decoding="async" />`;
+    }
+
+    return `<span class="app-icon-letter">${app.icon || "V"}</span>`;
+  }
+
   function createAppCard(app, detailMode = false) {
     const article = document.createElement("article");
     article.className = detailMode ? "app-card detail-card" : "app-card";
     article.innerHTML = `
       <div class="app-card-head">
-        <div class="app-badge" style="background: linear-gradient(145deg, ${app.gradient[0]}, ${app.gradient[1]});">${app.icon}</div>
+        <div class="app-badge" style="background: linear-gradient(145deg, ${app.gradient[0]}, ${app.gradient[1]});">
+          ${getIconMarkup(app)}
+        </div>
         <div>
           <div class="eyebrow" style="margin-bottom: 10px;">${app.featureTag}</div>
           <h3>${app.title}</h3>
@@ -62,7 +72,9 @@
     if (spotlight && apps[0]) {
       const app = apps[0];
       spotlight.innerHTML = `
-        <div class="orb" style="background: linear-gradient(145deg, ${app.gradient[0]}, ${app.gradient[1]});">${app.icon}</div>
+        <div class="orb" style="background: linear-gradient(145deg, ${app.gradient[0]}, ${app.gradient[1]});">
+          ${getIconMarkup(app)}
+        </div>
         <h2>${app.title}</h2>
         <p>${app.details}</p>
       `;
@@ -90,8 +102,8 @@
     if (titleEl) titleEl.textContent = app.title;
     if (subtitleEl) subtitleEl.textContent = app.tagline;
     if (iconEl) {
-      iconEl.textContent = app.icon;
       iconEl.style.background = `linear-gradient(145deg, ${app.gradient[0]}, ${app.gradient[1]})`;
+      iconEl.innerHTML = getIconMarkup(app);
     }
     if (featureTagEl) featureTagEl.textContent = app.featureTag;
     if (introEl) introEl.textContent = app.details;

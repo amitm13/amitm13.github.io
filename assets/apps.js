@@ -13,6 +13,7 @@ window.VEDICORE_APPS = [
     accent: "saffron",
     gradient: ["#8a4b0f", "#d97706", "#f8c46b"],
     icon: "G",
+    iconUrl: 'https://play-lh.googleusercontent.com/lGrgWqN0wdql7YH2XscWkcKbmtPJpKnX9lSYYDkE5Emq752_zLOEniwglm7jKK6BLZLC_asxSj5W_n2a5AXC=w240-h480-rw',
     featureTag: "Scripture",
     features: [
       "Verse-first reading flow",
@@ -39,6 +40,7 @@ window.VEDICORE_APPS = [
     accent: "emerald",
     gradient: ["#0f5132", "#15803d", "#8fd19e"],
     icon: "N",
+    iconUrl: 'https://play-lh.googleusercontent.com/eI1o7pUGZo86_-z8caKkvvlW7EIT7wKV9bC2Xsb_UBz9Cb5wqpTJhUVyCBkPreRD9HhE8tNG2wzJfi9rKKyn=w240-h480-rw',
     featureTag: "Practice",
     features: [
       "Calm mantra-focused experience",
